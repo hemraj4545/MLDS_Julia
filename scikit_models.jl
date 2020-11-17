@@ -30,7 +30,7 @@ fit!(DTC, features, labels)
 prediction = predict(DTC, features)
 
 accuracy = accuracy_score(prediction, labels)
-print("Accuracy : ",string(round(accuracy*100),3))
+print("Accuracy for Decision Tree Classifier: ",string(round(accuracy*100),3))
 
 # Random Forest Classifier
 RFC = RandomForestClassifier()
@@ -39,4 +39,4 @@ fit!(RFC, features, labels)
 prediction = predict(RFC, features)
 
 accuracy = accuracy_score(prediction, labels)
-print("Accuracy : ",string(round(accuracy*100),3))
+print("Accuracy for Random Forest Classifier: ",string(round(accuracy*100),3))
